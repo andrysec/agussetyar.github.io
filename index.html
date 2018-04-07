@@ -151,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row slideanim">
             <div class="col">
                 <div class="card">
                     <div class="card-header">Achievements</div>
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>     
-        <div class="row">
+        <div class="row slideanim">
             <div class="col-4">
                 <div class="card">
                     <div class="card-body text-center">
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row slideanim">
             <div class="col">
                 <div class="card">
                     <div class="card-header text-center">Work Experience</div>
@@ -223,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row slideanim">
             <div class="col">
                 <div class="card">
                     <div class="card-header text-center">Skills</div>
@@ -331,7 +331,18 @@
             }
 
             $('#website').html(document.domain);       */
-        });
+
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                        }
+                    });
+                });
+            });
     </script>
 </body>
 </html>
