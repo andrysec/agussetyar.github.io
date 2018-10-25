@@ -152,7 +152,7 @@
             </div>
         </div>
         <div class="row slideanim">
-            <div class="col-md-8" id="achievements-text">
+            <div class="col-md-8" id="text">
                 <div class="card">
                     <div class="card-header">Achievements</div>
                     <div class="card-body">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" id="achievements-icon">
+            <div class="col-md-4" id="aicon">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-certificate achievements coloring"></i>
@@ -178,14 +178,14 @@
             </div>
         </div>     
         <div class="row slideanim">
-            <div class="col-md-4" id="organization-icon">
+            <div class="col-md-4" id="icon">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-users organization coloring"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8" id="organization-text">
+            <div class="col-md-8" id="text">
                 <div class="card">
                     <div class="card-header">Organization</div>
                     <div class="card-body">
@@ -283,6 +283,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="coloring">Operating System</h5>
+                                    <hr>
+
+                                    <h6>Windows</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width:75%;"></div>
+                                    </div><br>
+                                    
+                                    <h6>Linux</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width:85%;"></div>
+                                    </div><br>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -316,7 +331,12 @@
                 });
             });
 
-            
+            $(window).resize(function(){     
+                if($('.container').width() < 768 ){
+                    $('#text').removeClass('col-md-8').addClass('col-md-12');
+                    $('#icon').removeClass('col-md-4').addClass('d-none');
+                }
+            });
         });
     </script>
 </body>
