@@ -321,6 +321,11 @@
 
     <script type="text/javascript">
         $(function() {
+            if($('.container').width() < 768 ) {
+                $('#text').removeClass('col-md-8').addClass('col-md-12');
+                $('#icon').removeClass('col-md-4').addClass('d-none');
+            }
+
             $(window).scroll(function() {
                 $(".slideanim").each(function() {
                     var pos = $(this).offset().top;
@@ -330,13 +335,6 @@
                         $(this).addClass("slide");
                     }
                 });
-            });
-
-            $(window).resize(function(){     
-                if($('.container').width() < 768 ){
-                    $('#text').removeClass('col-md-8').addClass('col-md-12');
-                    $('#icon').removeClass('col-md-4').addClass('d-none');
-                }
             });
         });
     </script>
