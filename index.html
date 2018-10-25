@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-md-12 text-center">
                 <img class="card-img-top rounded img-thumbnail avatar" src="assets/images/agussetyar.jpg" alt="Agus Setya R">
                 <div class="card">
                     <div class="card-body">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header text-center">About Me</div>
                     <div class="card-body">
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="row">    
-            <div class="col">
+            <div class="col-md-12">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="tab" href="#personal_info">Personal Info</a>
@@ -152,7 +152,7 @@
             </div>
         </div>
         <div class="row slideanim">
-            <div class="col">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Achievements</div>
                     <div class="card-body">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-certificate achievements coloring"></i>
@@ -178,14 +178,14 @@
             </div>
         </div>     
         <div class="row slideanim">
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-users organization coloring"></i>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Organization</div>
                     <div class="card-body">
@@ -198,22 +198,22 @@
             </div>
         </div>
         <div class="row slideanim">
-            <div class="col">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header text-center">Work Experience</div>
                     <div class="card-body text-center">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-4">
                                 <p>Freelancer Website Programmer</p>
                                 <h4 class="coloring">PT Roda Mutiara Cakra</h4>
                                 <span>rodamutiaracakra.com</span>
                             </div>
-                            <div class="col">
+                            <div class="col-md-4">
                                 <p>Junior Website Programmer</p>
                                 <h4 class="coloring">Computesta</h4>
                                 <span>computesta.com</span>
                             </div>
-                            <div class="col">
+                            <div class="col-md-4">
                                 <p>Fullstack Programmer</p>
                                 <h4 class="coloring">Rudex Teknologi Indonesia</h4>
                                 <span>rudextech.com</span>
@@ -224,13 +224,13 @@
             </div>
         </div>
         <div class="row slideanim">
-            <div class="col">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header text-center">Skills</div>
                         <div class="card-body">
                             <div class="row">
-                                <div class="col">
-                                    <h5 class="coloring">Native</h5>
+                                <div class="col-md-6">
+                                    <h5 class="coloring">Native Programming</h5>
                                     <hr>
 
                                     <h6>HTML</h6>
@@ -258,7 +258,7 @@
                                         <div class="progress-bar bg-dark" style="width:80%;"></div>
                                     </div><br>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <h5 class="coloring">CSS Framework</h5>
                                     <hr>
 
@@ -293,10 +293,10 @@
         
         <footer class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-6">
                     <p>Copyright &copy; 2018 Agus Setya R</p>
                 </div>
-                <div class="col text-right">
+                <div class="col-md-6 text-right">
                     <p>agussetyar.github.io</p>
                 </div>
             </div>
@@ -304,41 +304,14 @@
     </div>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            /*var tr_personalinfo         = $('table#personal_info > tbody > tr').length;
-            var tr_contact              = $('table#contact > tbody > tr').length;
-            var tr_education_formal     = $('table#education_formal > tbody > tr').length;
-            var tr_education_nonformal  = $('table#education_nonformal > tbody > tr').length;
-            
-            for(var i = 1; i <= tr_personalinfo; i++) {
-                $('table#personal_info > tbody > tr:nth-child('+i+') > td:last-child').html('<strong>'+$('table#personal_info > tbody > tr:nth-child('+i+') > td:last-child').text()+'</strong>');
-            }
-
-            for(var i = 1; i <= tr_contact; i++) {
-                $('table#contact > tbody > tr:nth-child('+i+') > td:last-child').html('<strong>'+$('table#contact > tbody > tr:nth-child('+i+') > td:last-child').text()+'</strong>');
-            }
-
-            for(var i = 1; i <= tr_education_formal; i++) {
-                $('table#education_formal > tbody > tr:nth-child('+i+') > td:last-child').html('<strong>'+$('table#education_formal > tbody > tr:nth-child('+i+') > td:last-child').text()+'</strong>');
-            }
-
-            for(var i = 1; i <= tr_education_formal; i++) {
-                $('table#education_formal > tbody > tr:nth-child('+i+') > td:last-child').html('<strong>'+$('table#education_formal > tbody > tr:nth-child('+i+') > td:last-child').text()+'</strong>');
-            }
-
-            for(var i = 1; i <= tr_education_nonformal; i++) {
-                $('table#education_nonformal > tbody > tr:nth-child('+i+') > td:last-child').html('<strong>'+$('table#education_nonformal > tbody > tr:nth-child('+i+') > td:last-child').text()+'</strong>');
-            }
-
-            $('#website').html(document.domain);       */
-
+        $(function() {
             $(window).scroll(function() {
                 $(".slideanim").each(function(){
                     var pos = $(this).offset().top;
 
                     var winTop = $(window).scrollTop();
                         if (pos < winTop + 600) {
-                        $(this).addClass("slide");
+                            $(this).addClass("slide");
                         }
                     });
                 });
