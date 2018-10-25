@@ -152,7 +152,7 @@
             </div>
         </div>
         <div class="row slideanim">
-            <div class="col-md-8">
+            <div class="col-md-8" id="achievements-text">
                 <div class="card">
                     <div class="card-header">Achievements</div>
                     <div class="card-body">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="achievements-icon">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-certificate achievements coloring"></i>
@@ -178,14 +178,14 @@
             </div>
         </div>     
         <div class="row slideanim">
-            <div class="col-md-4">
+            <div class="col-md-4" id="organization-icon">
                 <div class="card">
                     <div class="card-body text-center">
                         <i class="fa fa-users organization coloring"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" id="organization-text">
                 <div class="card">
                     <div class="card-header">Organization</div>
                     <div class="card-body">
@@ -306,16 +306,18 @@
     <script type="text/javascript">
         $(function() {
             $(window).scroll(function() {
-                $(".slideanim").each(function(){
+                $(".slideanim").each(function() {
                     var pos = $(this).offset().top;
 
                     var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
-                        }
-                    });
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
                 });
             });
+
+            
+        });
     </script>
 </body>
 </html>
