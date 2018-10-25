@@ -321,10 +321,12 @@
 
     <script type="text/javascript">
         $(function() {
-            if($('.container').width() < 768 ) {
-                $('#text').removeClass('col-md-8').addClass('col-md-12');
-                $('#icon').removeClass('col-md-4').addClass('d-none');
-            }
+            $(window).resize(function() {
+                if($('.container').width() < 768 ) {
+                    $('#text').toggleClass('col-md-8 col-md-12');
+                    $('#icon').toggleClass('col-md-4 d-none');
+                }
+            });
 
             $(window).scroll(function() {
                 $(".slideanim").each(function() {
